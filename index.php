@@ -12,7 +12,7 @@ if ($API->connect("$ip", "$user", "$password")) {
         "msg"=>"good"
     ];
 
-    print_r(json_encode($respones));
+    echo json_encode($respones);
 
 } else {
    
@@ -21,7 +21,7 @@ if ($API->connect("$ip", "$user", "$password")) {
         "status"=> false,
         "msg"=>"no user name or password"
     ];
-    print_r(json_encode($respones));
+        echo json_encode($respones);
 }
 
 
