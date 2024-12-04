@@ -2,9 +2,9 @@
  require_once('api.php');
  $API = new RouterosAPI();
 
-$ip = strip_tags($_POST['ip']);
-$user = strip_tags($_POST['user']);
-$password = strip_tags($_POST['password']);
+$ip = strip_tags($_GET['ip']);
+$user = strip_tags($_GET['user']);
+$password = strip_tags($_GET['password']);
 
 if ($API->connect("$ip", "$user", "$password")) {
     $respones = [
